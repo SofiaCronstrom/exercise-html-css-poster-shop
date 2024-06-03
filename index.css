@@ -57,17 +57,17 @@ h3{
     font-size: 2.5rem;
     padding: 1rem 0;
 }
-p{
-    font-size: 1.3rem;
+main p{
+    font-size: 1.1rem;
     padding: 0 0 3.5rem 0;
 }
-button{
+main button{
     color: white;
     border: none;
     border-radius: 5px;
     background-color: #e12846;
     padding: 0.5rem 2rem;
-
+    font-weight: bold;
 }
 
 /*//Card Small//*/
@@ -82,9 +82,16 @@ section.cardS-wrapper{
 .card-small{
     flex-basis: 31%;
     margin-top: 1rem;
+    max-height: 719px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .card-small img{
     width: 100%;
+}
+.card-small button{
+    max-width: 50%;
 }
 
 /*//Card Big//*/
@@ -98,7 +105,43 @@ section.cardS-wrapper{
 article.card-big{
     background-color: white;
     color: black;
+
+}
+.card-big h3{
+    margin: 2rem 1rem 1rem 1rem;
+}
+.card-big p{
+    margin: 0 1rem;
 }
 .card-big img{
  width: 100%;
+}
+.card-big button{
+    padding: 1rem;
+    font-size: 1.02rem;
+    margin: 2rem 1rem 1rem 1rem;
+}
+
+/*///FOOTER///*/
+footer{
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.footer-wrapper{
+    width: 80%;
+    display: flex;
+    gap: 20rem;
+}
+.footer-wrapper h4{
+    font-size: 2rem;
+}
+
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+}
+.footer-adress{
+    padding: 0;
 }
